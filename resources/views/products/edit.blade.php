@@ -15,12 +15,12 @@
     @if ($errors->any())
         <div class="alert alert-danger">
             <p>There are some problems in your input</p>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
         </div>
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>$error</li>
-            @endforeach
-        </ul>
     @endif
 
     <form action="{{ route('products.update', $product->id) }}" method="post" class="row">
