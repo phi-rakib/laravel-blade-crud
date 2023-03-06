@@ -36,6 +36,10 @@ DB_PASSWORD=your-db-password
 ```bash
 php artisan migrate
 ```
+- Seed database
+```bash
+php artisan db:seed
+```
 - Start local development server
 ```bash
 php artisan serve
