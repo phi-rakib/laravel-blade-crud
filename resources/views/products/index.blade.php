@@ -21,10 +21,10 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="auto">Action</th> 
+            <th scope="col">No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Details</th>
+            <th scope="col" colspan="3">Action</th> 
         </tr>
 
         @foreach ($products as $product)
@@ -33,11 +33,13 @@
                 <td>{{ $product->name }}</td>
                 <td>{{ $product->detail }}</td>
                 <td>
+                    <a href="{{ route('products.show', $product->id) }}" class="btn btn-info">Show</a>
+                </td>
+                <td>
+                    <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary">Edit</a>
+                </td>
+                <td>
                     <form action="{{ route('products.destroy', $product->id) }}" method="post">
-                        <a href="{{ route('products.show', $product->id) }}" class="btn btn-info">Show</a>
-
-                        <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary">Edit</a>
-
                         @csrf
                         @method('DELETE')
 
