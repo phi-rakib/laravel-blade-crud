@@ -23,6 +23,7 @@
         <tr>
             <th scope="col">No</th>
             <th scope="col">Name</th>
+            <th scope="col">Price</th>
             <th scope="col">Details</th>
             <th scope="col" colspan="3">Action</th> 
         </tr>
@@ -31,6 +32,7 @@
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $product->name }}</td>
+                <td>{{ $product->price }}</td>
                 <td>{{ $product->detail }}</td>
                 <td>
                     <a href="{{ route('products.show', $product->id) }}" class="btn btn-info">Show</a>

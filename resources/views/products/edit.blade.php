@@ -39,6 +39,15 @@
 
             <div class="col-12">
                 <div class="form-group">
+                    <label for="Price" class="form-label">
+                        <strong>Price:</strong>
+                    </label>
+                    <input type="decimal" name="price" value="{{ $product->price }}" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
                     <label for="Detail" class="form-label">
                         <strong>Detail:</strong>
                     </label>

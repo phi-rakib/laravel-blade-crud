@@ -20,6 +20,11 @@
             </div>
 
             <div class="form-group">
+                <strong>Price:</strong>
+                {{ $product->price }}
+            </div>
+
+            <div class="form-group">
                 <strong>Detail:</strong>
                 {{ $product->detail }}
             </div>
