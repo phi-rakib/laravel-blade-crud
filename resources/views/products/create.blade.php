@@ -38,6 +38,15 @@
 
             <div class="col-12">
                 <div class="form-group">
+                    <label for="Price" class="form-label">
+                        <strong>Price:</strong>
+                    </label>
+                    <input type="decimal" name="price" class="form-control" placeholder="Price">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-group">
                     <label for="Detail" class="form-label">
                         <strong>Detail:</strong>
                     </label>
