@@ -1,6 +1,7 @@
 # Laravel CRUD Application
 
 [![Tests](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/run-tests.yml/badge.svg)](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/run-tests.yml)
+[![Browser Tests](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/browser-tests.yml/badge.svg)](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/browser-tests.yml)
 [![Fix Code Style](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/lint.yml/badge.svg)](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/lint.yml)
 [![Larastan](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/larastan.yml/badge.svg)](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/larastan.yml)
 [![PHP Insights](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/php-insights.yml/badge.svg)](https://github.com/phi-rakib/laravel-blade-crud/actions/workflows/php-insights.yml)
