@@ -56,11 +56,11 @@ class ProductControllerTest extends DuskTestCase
     {
         $product = Product::factory()->create();
 
-        $this->browse(function (Browser $browser) use ($product) {
+        $this->browse(function (Browser $browser) {
             $browser->visit('/products')
-            ->press('Delete')
-            ->assertPathIs('/products')
-            ->assertSee('Product Deleted Successfully');
+                ->press('Delete')
+                ->assertPathIs('/products')
+                ->assertSee('Product Deleted Successfully');
         });
     }
 }
