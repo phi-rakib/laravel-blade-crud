@@ -9,7 +9,7 @@ use Tests\TestCase;
 class ProductControllerTest extends TestCase
 {
     use RefreshDatabase;
-    
+
     public function test_index_page_displays_paginated_products(): void
     {
         Product::factory(10)->create();
@@ -74,7 +74,7 @@ class ProductControllerTest extends TestCase
             'name' => 'Updated Name',
             'detail' => 'Updated Detail',
         ];
-        
+
         $response = $this->put(route('products.update', $product->id), $updatedData);
 
         $response->assertRedirect(route('products.index'));
