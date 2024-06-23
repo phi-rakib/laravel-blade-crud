@@ -35,6 +35,7 @@ class ProductControllerTest extends TestCase
         $productData = [
             'name' => 'Test Product',
             'detail' => 'Test Description',
+            'price' => rand(100, 1000),
         ];
 
         $response = $this->post(route('products.store'), $productData);
@@ -73,6 +74,7 @@ class ProductControllerTest extends TestCase
         $updatedData = [
             'name' => 'Updated Name',
             'detail' => 'Updated Detail',
+            'price' => rand(100, 1000),
         ];
 
         $response = $this->put(route('products.update', $product->id), $updatedData);
